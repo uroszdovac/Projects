@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <div id="top">
+        <div id="statistic">
+            <h1>Exam statistic June</h1>
+            <p>Total students: <span id="totalStudents">0</span></p>
+            <div id="headerPassed" class="stats">
+                <p>PASSED <span class="left"><span id="numOfPassed">0</span><span id="percentOfPassed">     </span></span></p>
+            </div>
+            <div id="headerFailed" class="stats">
+                <p>FAILED <span class="left"><span id="numOfFailed">0</span><span id="percentOfFailed"></span></span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="add" >
+       <div id="form">
+            <select name="subject" id="subject">
+                <option value="Web">Web</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="SPA">SPA</option>
+            </select>
+    
+            <input type="text" name="name" id="name" placeholder="Name surname" required>
+            <input type="number" name="grade" id="grade" placeholder="Grade" min="1" max="10" required>
+            <input type="button" value="ADD" id="addButton">
+       </div>
+    </div>
+
+    <div id="print">
+        <div id="passPrint" class="printed">
+            <p class="printP">PASSED</p>
+            <ul id="passedList">
+
+            </ul>
+        </div>
+        <div id="failPrint" class="printed">
+            <p class="printP" id="printP">FAILED</p>
+            <ul id="failedList">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="JS/app.js"></script>
+    <script src="JS/exam.js"></script>
+    <script src="JS/form.js"></script>
+    <script src="JS/student.js"></script>
+    <script src="JS/subject.js"></script>
+</body>
+</html>

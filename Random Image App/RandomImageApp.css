@@ -1,0 +1,16 @@
+#container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}
+
+button{
+    margin-top: 20px;
+}

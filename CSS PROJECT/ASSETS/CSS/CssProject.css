@@ -1,0 +1,383 @@
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GEneral Style */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px sans-serif;
+    color: #555;
+}
+
+nav{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+a.btn{
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 1;
+    background-color: #3f51b5;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+section:not(.hero):nth-child(even){
+    background-color: #f5f5f5;
+}
+
+/* Header Style */
+
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    animation: fadein 2s forwards;
+    opacity: 0;
+    color: #fff;
+}
+
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+
+header nav{
+    display: flex;
+    margin-right: -15px;
+}
+
+header h2{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header li{
+    margin-left: 15px;
+}
+
+.grid{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr{
+    width: 250px;
+    height: 3px;
+    background: #3f51b5;
+    border: 0;
+    margin-bottom: 50px;
+}
+
+section h3.title{
+    text-transform: capitalize;
+    font: bold 32px 'OpenSans', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section p{
+    max-width: 775px;
+    text-align: center;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+/* Hero Style */
+
+.hero{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.hero .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #80a3db;
+}
+
+.hero h1{
+    font: bold 60px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.hero h3{
+    font: normal 28px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero a{
+    padding: 20px 46px;
+}
+
+.hero-content-area{
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slideIn 1s forwards;
+}
+
+@keyframes slideIn{
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+/* Destinations Style */
+
+.destinations .grid li{
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.destinations .grid li.small{
+    flex-basis: 30%;
+}
+
+.destinations .grid li.large{
+    flex-basis: 70%;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+/* Packages Style */
+
+.packages .grid li{
+    padding: 50px;
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.packages .grid li i{
+    color: #8c9eef;
+}
+
+.packages .grid li h4{
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+/* Testmonial Style */
+
+.testimonials .quotes{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 40px 0 25px ;
+}
+
+/* Contact Style */
+
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.contact form .btn{
+    padding: 18px 42px;
+}
+
+.contact form input{
+    padding: 15px;
+    margin-right: 30px;
+    flex-grow: 1;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer Style */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #607d8b;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer ul li{
+    margin-left: 16px;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.6;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+footer ul li i{
+    color: #fff;
+}
+
+@media (max-width:800px){
+    section{
+        padding: 50px 20px;
+    }
+
+    header{
+        padding: 20px 50px; 
+        flex-direction: column;
+    }
+
+    header h2{
+        margin-bottom: 15px;
+    }
+
+    .hero{
+        min-height: 600px;
+    }
+
+    .hero h1{
+        font-size: 48px;
+    }
+
+    .hero h3{
+        font-size: 24px;
+    }
+
+    .hero a.btn{
+        padding: 15px 40px;
+    }
+    
+    .packages .grid li{
+        flex-basis: 100%;
+        padding: 20px;
+    }
+
+    .testimonials .quotes{
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .testimonials .author{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1100px){
+    .destinations .grid li.small,
+    .destinations .grid li.large{
+        flex-basis: 50%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer ul li{
+        margin: 0 8px;
+    }
+}
+
+@media (max-width:800px){
+    .destinations .grid li.small,
+    .destinations .grid li.large{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:1000px){
+    .contact form input{
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
+}

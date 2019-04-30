@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    font-family: monospace;
+}
+#top{
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    width: 100%;
+    padding: 25px;
+    
+}
+
+#statistic{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#statistic h1{
+    text-align: center;
+    color: aliceblue
+}
+
+#statistic h1 + p{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
+.printed{
+    
+    width: 45%;
+    float: left;
+}
+
+.printed p{
+    text-align: center;
+}
+
+#print{
+    width: 960px;
+    margin: 50px auto;
+}
+
+
+
+#add input, #add select{
+    margin-right: 18px;
+    padding: 10px;
+}
+
+.left{
+    float: right;
+}
+
+.stats{
+    padding: 10px;
+    margin: 15px;
+}
+
+#headerPassed{
+    background-color: rgb(40, 184, 179);
+    
+}
+
+#headerFailed{
+    background-color: rgb(255, 80, 73);
+}
+
+#numOfPassed, #numOfFailed{
+    color: white;
+    font-size: 21px;
+    position: relative;
+    bottom: 5px;
+    margin-right: 13px;
+}
+
+#percentOfPassed{
+    background-color:white;
+    border-radius: 8px;
+    color:rgb(40, 184, 179) ;
+    font-size: 21px;
+    position: relative;
+    bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: none;
+}
+
+#percentOfFailed{
+    background-color:white;
+    border-radius: 8px;
+    color:rgb(255, 80, 73) ;
+    font-size: 21px;
+    position: relative;
+    bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: none;
+}
+
+#add{
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+#form{
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+#addButton{
+    border: none;
+    color: #28B9B5;
+    font-size: 35px;
+    background-color: #f7f7f7;
+    position: relative;
+    top: 5px;
+    outline: none;
+}
+
+input, select{
+    border-radius: 5px;
+}
+
+#name{
+    width: 250px;
+}
+
+#grade{
+    width: 100px;
+}
+
+#name:focus, select:focus, #grade:focus{
+    border: 2px solid #28B9B5;
+    outline: none;
+}
+
+.printP{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#printP{
+    color: rgb(255, 80, 73);
+}
+
+#passedList, #failedList{
+    list-style-type: none;
+    font-size: 15px;
+    border-collapse: collapse;
+}
+
+.passedLi{
+    padding: 8px;
+    border-bottom: 1px solid gray; 
+}
+
+.passedLi:first-of-type{
+    border-top: 1px solid gray; 
+    
+}
+
+
+
+.failedLi{
+    padding: 8px;
+    border-bottom: 1px solid gray; 
+}
+
+.failedLi:first-of-type{
+    border-top: 1px solid gray; 
+    
+}
+
+.passedLi:nth-of-type(even){
+    background-color:#f7f7f7;
+}
+
+.failedLi:nth-of-type(even){
+    background-color:#f7f7f7;
+}
+
+.passedGradeSpan{
+    color: #28B9B5;
+    float: right;
+    margin-right: 9px;
+}
+
+.failedGradeSpan{
+    color: rgb(255, 80, 73);
+    float: right;
+    margin-right: 9px;
+}
+
+.xSpanPassed{
+    color: #28B9B5;
+    font-weight: bold;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+
+.xSpanFailed{
+    color: rgb(255, 80, 73);
+    font-weight: bold;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+
+.passedLi:hover .xSpanPassed{
+    display: inline;
+}
+
+.failedLi:hover .xSpanFailed{
+    display: inline;
+}
+
+
+.xSpanFailed{
+    color: rgb(255, 80, 73);
+    float: right;
+}

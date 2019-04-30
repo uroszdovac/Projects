@@ -1,0 +1,25 @@
+h1,p{
+    text-align: center;
+}
+
+#buttons{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttons button{
+    border-radius: 8px;
+    padding: 4px 22px;
+    color: #1abc9c;
+    border: 1px solid #1abc9c;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+#buttons button:hover{
+    color: #fff;
+    background-color: #1abc9c;
+}
